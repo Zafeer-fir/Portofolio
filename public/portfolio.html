@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portofolio lengkap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="page-head">
+<nav class="solid">
+  <a class="logo" href="index.html">Zafir.</a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#Works">Works</a></li>
+    <li><a href="#Experience">Experience</a></li>
+    <li><a href="#Services">Services</a></li>
+    <li><a href="#About">About</a></li>
+  </ul>
+  <a class="btn" href="#Contact">Contact</a>
+</nav>
+  <h1>Full portfolio</h1>
+</header>
+
+<main>
+  <section class="work" id="Works">
+    <div class="head">
+      <h2>All Projects</h2>
+    </div>
+    <div id="projects" data-limit="0"></div>
+  </section>
+
+  <section class="skills" id="Experience">
+    <div class="head">
+      <h2>Experience &amp; Skills</h2>
+    </div>
+    <div id="experience" data-limit="0"></div>
+  </section>
+
+  <section class="services" id="Services">
+    <div class="head">
+      <h2>I can help you with</h2>
+    </div>
+    <div class="service-grid">
+      <article class="service">
+        <span class="num">01</span>
+        <h3>Website Design</h3>
+        <p>Layanan lengkap untuk membuat dan meluncurkan website dari nol, atau mendesain ulang website yang sudah ada.</p>
+      </article>
+      <article class="service">
+        <span class="num">02</span>
+        <h3>Mobile App</h3>
+        <p>Kami merancang pengalaman yang elegan untuk aplikasi yang mencapai tujuan bisnis dan disukai pengguna.</p>
+      </article>
+      <article class="service">
+        <span class="num">03</span>
+        <h3>UX / UI Design</h3>
+        <p>Riset, wireframe, hingga antarmuka akhir yang jelas, konsisten, dan nyaman dipakai.</p>
+      </article>
+      <article class="service">
+        <span class="num">04</span>
+        <h3>Full Package</h3>
+        <p>Dari ide sampai peluncuran: strategi, desain, pengembangan front end, dan dukungan setelahnya.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="about" id="About">
+    <div class="head">
+      <h2>About saya</h2>
+    </div>
+    <p>Tulis dua atau tiga kalimat About dirimu, apa yang kamu kerjakan, dan jenis proyek yang kamu cari.</p>
+  </section>
+
+  <section class="contact" id="Contact">
+    <div class="head">
+      <h2>Mari bekerja sama</h2>
+    </div>
+    <p id="status" class="form-status" role="status"></p>
+    <form name="contact" method="POST" action="/portfolio.html?kirim=ok#Contact" data-netlify="true" netlify-honeypot="website">
+      <input type="hidden" name="form-name" value="contact">
+      <label>Nama
+        <input type="text" name="nama" required maxlength="80">
+      </label>
+      <label>Email
+        <input type="email" name="email" required maxlength="120">
+      </label>
+      <label>Pesan
+        <textarea name="pesan" rows="5" required maxlength="2000"></textarea>
+      </label>
+      <!-- kolom jebakan untuk bot: harus tetap kosong -->
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit">Kirim pesan</button>
+    </form>
+  </section>
+</main>
+
+<footer><span>© <span id="year"></span> Zafir</span><a href="#">Kembali ke atas ↑</a></footer>
+
+<script src="script.js"></script>
+</body>
+</html>

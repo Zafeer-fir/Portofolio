@@ -1,0 +1,46 @@
+# Repo GitHub: Zafeer-fir/Portofolio
+backend:
+  name: github
+  repo: Zafeer-fir/Portofolio
+  branch: main
+
+locale: id
+publish_mode: simple
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: konten
+    label: Konten
+    files:
+      - name: proyek
+        label: Proyek
+        file: public/content/projects.json
+        format: json
+        fields:
+          - label: Daftar proyek (yang paling atas = paling baru)
+            name: items
+            widget: list
+            add_to_top: true
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Judul, name: title, widget: string }
+              - { label: Kategori, name: category, widget: string, required: false }
+              - { label: Tahun, name: year, widget: string, required: false }
+              - { label: Tautan (opsional), name: link, widget: string, required: false, pattern: ['^https?://', 'Harus diawali http:// atau https://'] }
+              - { label: Gambar sampul, name: image, widget: image, required: false }
+
+      - name: pengalaman
+        label: Pengalaman & keahlian
+        file: public/content/experience.json
+        format: json
+        fields:
+          - label: Daftar pengalaman (yang paling atas = paling baru)
+            name: items
+            widget: list
+            add_to_top: true
+            summary: "{{fields.title}} · {{fields.years}}"
+            fields:
+              - { label: Tahun, name: years, widget: string, hint: "Contoh: 2024–26" }
+              - { label: Bidang, name: title, widget: string }
+              - { label: Alat / keahlian, name: skills, widget: list, default: [] }

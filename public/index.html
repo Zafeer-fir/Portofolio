@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portofolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@1&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="index.html">Zafir.</a>
+  <ul>
+    <li><a href="#top">Home</a></li>
+    <li><a href="#Works">Works</a></li>
+    <li><a href="#Experience">Experience</a></li>
+    <li><a href="portfolio.html#Services">Services</a></li>
+    <li><a href="portfolio.html#About">About</a></li>
+  </ul>
+  <a class="btn" href="portfolio.html#Contact">Contact</a>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hello" id="hello">Hey, there</div>
+
+  <!-- Taruh fotomu (PNG tanpa latar) di folder yang sama dengan nama foto.png -->
+  <div class="portrait" id="portrait">
+    <img src="foto.png" alt="Foto profil">
+  </div>
+
+  <div class="status"><i></i>Available for new opportunities</div>
+  <p class="sub">Fokus pada desain web, UX / UI, dan pengembangan front end.</p>
+  <h1 class="name">I am<br>Zafir</h1>
+  <div class="role">Desainer<br>produk<br>digital</div>
+</header>
+
+<main>
+  <section class="work" id="Works">
+    <div class="head">
+      <h2>New Projects</h2>
+      <a href="portfolio.html#Works">Lihat semua proyek →</a>
+    </div>
+    <div id="projects" data-limit="2"></div>
+  </section>
+
+  <section class="skills" id="Experience">
+    <div class="head">
+      <h2>Experience &amp; Skills</h2>
+      <a href="portfolio.html#Experience">Lihat semua pengalaman →</a>
+    </div>
+    <div id="experience" data-limit="3"></div>
+  </section>
+</main>
+
+<footer><span>© <span id="year"></span> Zafir</span><a href="#">Kembali ke atas ↑</a></footer>
+
+<script src="script.js"></script>
+</body>
+</html>

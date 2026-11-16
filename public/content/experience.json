@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "years": "2022–24",
+      "title": "Project Management",
+      "skills": [
+        "Notion",
+        "Google Tables",
+        "Microsoft To Do",
+        "TickTick"
+      ]
+    },
+    {
+      "years": "2018–24",
+      "title": "Development",
+      "skills": [
+        "Webflow",
+        "HTML & CSS",
+        "JavaScript",
+        "Xano"
+      ]
+    },
+    {
+      "years": "2016–24",
+      "title": "Visual Design",
+      "skills": [
+        "Figma",
+        "After Effects",
+        "Photoshop",
+        "Final Cut",
+        "Midjourney"
+      ]
+    },
+    {
+      "years": "2014–16",
+      "title": "Brand Design",
+      "skills": [
+        "Illustrator",
+        "InDesign",
+        "Photoshop"
+      ]
+    },
+    {
+      "years": "2012–14",
+      "title": "Photography",
+      "skills": [
+        "Lightroom",
+        "Capture One"
+      ]
+    },
+    {
+      "years": "2010–12",
+      "title": "Illustration",
+      "skills": [
+        "Procreate",
+        "Illustrator"
+      ]
+    }
+  ]
+}
