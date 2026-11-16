@@ -1,11 +1,11 @@
 {
   "items": [
     {
-      "title": "Proyek pertama",
-      "category": "Kategori",
+      "title": "Math or Boom",
+      "category": "Quiz Mathematic",
       "year": "2026",
       "link": "https://math-or-boom.netlify.app/",
-      "image": "math-or-boom.netlify.app"
+      "image": "https://math-or-boom.netlify.app"
     },
     {
       "title": "Proyek kedua",
